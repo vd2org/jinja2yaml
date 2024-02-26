@@ -7,7 +7,7 @@ store many small templates in one file.
 ## Install
 
 ```bash
-pip install j2tools
+pip install jinja2yaml
 ```
 
 #### Usage:
