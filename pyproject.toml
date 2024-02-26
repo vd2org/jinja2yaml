@@ -1,6 +1,6 @@
 [project]
 name = "jinja2yaml"
-version = "0.1.0"
+version = "0.1.1"
 description = "YamlLoader for jinja2"
 keywords = [
     "jinja2", "jinja2-template", "jinja2-extention", "jinja2yaml", "yaml", "template"
