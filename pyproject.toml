@@ -49,7 +49,7 @@ distribution = true
 [tool.pdm.dev-dependencies]
 dev = [
     "pytest~=8.0.2",
-    "ubump~=0.1.8",
+    "ubump~=0.1.8; python_version >= '3.11'",
     "requests>=2.31.0",
 ]
 
