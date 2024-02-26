@@ -4,4 +4,4 @@
 
 from .yamlloader import YamlLoader
 
-VERSION = "v0.1.2"
+VERSION = "v0.1.3"
