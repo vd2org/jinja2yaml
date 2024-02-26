@@ -38,4 +38,5 @@ jobs:
 
       - name: "Create release"
         run: |
+          pdm venv activate
           python tools/create_release.py ${{ secrets.GITHUB_TOKEN }} ${{ github.repository }} ${{ github.ref_name }} README.md
