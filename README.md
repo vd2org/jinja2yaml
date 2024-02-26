@@ -10,6 +10,10 @@ store many small templates in one file.
 pip install jinja2yaml
 ```
 
+### Related packages:
+
+- [Collection of utils for jinja2](https://github.com/vd2org/jinja2utils)
+
 #### Usage:
 
 ```yaml
