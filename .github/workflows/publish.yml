@@ -28,13 +28,13 @@ jobs:
           pdm install --no-self
           pdm build
 
-#      - name: "Publish"
-#        env:
-#          PYPI_USERNAME: __token__
-#          PYPI_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-#        run: |
-#          pdm config repository.pypi.password "$PYPI_TOKEN"
-#          pdm publish
+      - name: "Publish pypi"
+        env:
+          PYPI_USERNAME: __token__
+          PYPI_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+        run: |
+          pdm config repository.pypi.password "$PYPI_TOKEN"
+          pdm publish
 
       - name: "Create release"
         run: |
