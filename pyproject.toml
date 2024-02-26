@@ -55,6 +55,6 @@ dev = [
 
 [tool.ubump]
 template = "v${major}.${minor}.${patch}"
-message = "Bump to {version}"
+message = "Bump to ${version}"
 tag = true
 files = ["src/jinja2yaml/__init__.py"]
