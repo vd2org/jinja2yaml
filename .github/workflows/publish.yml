@@ -30,9 +30,9 @@ jobs:
 
       - name: "Publish pypi"
         env:
-          PYPI_USERNAME: __token__
-          PYPI_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+          PYPI_TOKEN: ${{ secrets.PYPI_TOKEN }}
         run: |
+          pdm config repository.pypi.username "__token__"
           pdm config repository.pypi.password "$PYPI_TOKEN"
           pdm publish
 
