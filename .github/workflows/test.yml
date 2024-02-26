@@ -28,5 +28,5 @@ jobs:
 
       - name: "Run tests"
         run: |
-          pdm venv activate
-          pytest
+          pdm run pytest
+          
