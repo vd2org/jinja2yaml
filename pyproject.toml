@@ -1,0 +1,28 @@
+[project]
+name = "jinja2yaml"
+version = "0.1.0"
+description = "YamlLoader for jinja2"
+authors = [
+    {name = "vd", email = "jinja2yaml@vd2.org"},
+]
+dependencies = [
+    "jinja2~=3.1.3",
+    "pyyaml~=6.0.1",
+]
+requires-python = ">=3.11,<3.13"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest~=8.0.2",
+    "ubump~=0.1.8",
+]
