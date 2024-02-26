@@ -23,7 +23,7 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           pip3 install pdm
-          pdm install --no-root
+          pdm install --no-self
 
       - name: "Run tests"
         run: |
