@@ -14,16 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
+      - name: "Set up Python ${{ matrix.python-version }}"
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Install dependencies
+      - name: "Install dependencies"
         run: |
           python3 -m pip install --upgrade pip
           pip3 install pdm
+          pdm install --no-root
 
-      - name: test api implementation
+      - name: "Run tests"
         run: |
           pytest
